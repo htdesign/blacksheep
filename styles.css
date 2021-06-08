@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5 { font-weight: 700 }
     width: 100%;
     height: auto;
     position: relative;
-    background: url('/assets/main-banner.png') 34% 0 no-repeat;
+    background: url('./assets/main-banner.png') 34% 0 no-repeat;
     background-size: 200%;
     color: #ffffff;
     margin-bottom: 2em;
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5 { font-weight: 700 }
     display: block;
     position: absolute;
     bottom: -2px;
-    background: url('/assets/banner-wave.svg') bottom center no-repeat;
+    background: url('./assets/banner-wave.svg') bottom center no-repeat;
     background-size: auto;
 }
 
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5 { font-weight: 700 }
 @media (min-width: 768px) {
 
     .header {
-        background: url('/assets/main-banner.png') 50% 0 no-repeat;
+        background: url('./assets/main-banner.png') 50% 0 no-repeat;
 
         margin-bottom: 2em;
     }
@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5 { font-weight: 700 }
 @media (min-width: 1024px) {
 
     .header {
-        background: url('/assets/main-banner.png') 50% 0 no-repeat;
+        background: url('./assets/main-banner.png') 50% 0 no-repeat;
         background-size: 160%;
         margin-bottom: 2em;
     }
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5 { font-weight: 700 }
     .header {
         width: 100%;
         height: auto;
-        background: url('/assets/main-banner.png') no-repeat;
+        background: url('./assets/main-banner.png') no-repeat;
         background-size: 100%;
         margin-bottom: 4em;
     }
@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5 { font-weight: 700 }
         display: block;
         position: absolute;
         bottom: -2px;
-        background: url('/assets/banner-wave.svg') bottom center no-repeat;
+        background: url('./assets/banner-wave.svg') bottom center no-repeat;
         background-size: contain;
     }
 
