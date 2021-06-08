@@ -1,0 +1,387 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {box-sizing: border-box}
+
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 { font-weight: 700 }
+
+.container {
+    max-width: 100%;
+    padding-bottom: 2.4em;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url('/assets/main-banner.png') 34% 0 no-repeat;
+    background-size: 200%;
+    color: #ffffff;
+    margin-bottom: 2em;
+}
+.header-copy {
+    padding: 3em 1.2em 4em 1.2em;
+    z-index: 12;
+    width: 90%;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f2f2f2;
+    margin-bottom: 0.5em;
+}
+
+.header h3 {
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.header .btn {
+    display: inline-block;
+    background: #de6c17;
+    padding: 0.8em 1em;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.header::after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    background: url('/assets/banner-wave.svg') bottom center no-repeat;
+    background-size: auto;
+}
+
+.services {
+    color: #36413c;
+    text-align: center;
+    margin-bottom: 2em;
+    padding: 0 1.4em;
+    box-sizing: border-box;
+}
+
+.services h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0.13em;
+    line-height: 1;
+}
+
+.services h3 {
+    font-size: 20px;
+    padding: 1em 0;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.service {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 2px 0.5px rgba(0, 0, 0, 0.18);
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.service .copy {
+    padding: 1.2em;
+}
+
+.service .copy h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.service .copy p {
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 0.8em;
+}
+
+.service .copy .learn {
+    display: block;
+    color: #de6c17;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.service img {
+    width: 100%;
+}
+
+
+@media (min-width: 640px) {
+    .header-copy {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .header {
+        background: url('/assets/main-banner.png') 50% 0 no-repeat;
+
+        margin-bottom: 2em;
+    }
+
+    .header-copy {
+        width: 70%
+    }
+
+    .header h1 {
+        font-size: 45px;
+    }
+
+    .header h3 {
+        font-size: 24px;
+    }
+
+    .header .btn {
+        font-size: 18px;
+    }
+
+    .header-copy {
+        padding: 6em 2em;
+    }
+
+    .services {
+        padding: 0 2em;
+    }
+    
+    .service {
+        display: flex;
+    }
+
+    .service img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .header {
+        background: url('/assets/main-banner.png') 50% 0 no-repeat;
+        background-size: 160%;
+        margin-bottom: 2em;
+    }
+
+    .header-copy {
+        width: 70%
+    }
+
+    .header h1 {
+        font-size: 45px;
+    }
+
+    .header h3 {
+        font-size: 24px;
+    }
+
+    .header .btn {
+        font-size: 18px;
+    }
+
+    .header-copy {
+        padding: 12em 6em;
+    }
+
+    .services {
+        padding: 0 6em;
+    }
+
+    .services h2 {
+        font-size: 45px;
+    }
+
+    .services > h3 {
+        margin-bottom: 2em;
+        font-size: 24px;
+    }
+
+    .service .copy {
+        padding: 0 2em;
+    }
+
+    .service .copy h3 {
+        font-size: 28px;
+    }
+    
+    .service .copy p {
+        font-size: 18px;
+    }
+
+    .service .copy .learn {
+        font-size: 18px;
+    }
+
+
+}
+
+@media (min-width: 1280px) {
+
+    .header {
+        width: 100%;
+        height: auto;
+        background: url('/assets/main-banner.png') no-repeat;
+        background-size: 100%;
+        margin-bottom: 4em;
+    }
+
+
+    .header-copy {
+        box-sizing: border-box;
+        width: 60%;
+        padding: 12em 12em;
+    }
+
+    .header h1 {
+        font-size: 45px;
+    }
+
+    .header h3 {
+        font-size: 24px;
+    }
+
+    .header .btn {
+        font-size: 18px;
+    }
+
+    .header::after {
+        width: 100%;
+        height: 100%;
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        background: url('/assets/banner-wave.svg') bottom center no-repeat;
+        background-size: contain;
+    }
+    
+    .services-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .service {
+        display: block;
+        width: 30%;
+    }
+
+    .service img {
+        width: 100%;
+    }
+
+    .container {
+        max-width: 1536px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1536px) {
+
+    /* .container {
+        max-width: 1536px;
+        margin: 0 auto;
+    }
+    .header {
+        width: 100%;
+        height: 640px;
+        background: url('/assets/main-banner.png') no-repeat;
+        background-size: cover;
+        position: relative
+        overflow: hidden;
+        position: relative;
+        z-index: -8;
+    }
+    
+    .header h1{
+        width: 12.563rem;
+        border: 1px solid red;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    .header h3 {
+        width: 18.25rem;
+        border: 1px solid red;
+        color: #ffffff;
+    }
+    
+    .header .header-copy {
+         border: 1px solid red;
+         width: 50%;
+         position: relative;
+         display: block;
+         margin-top: 50%;
+    }
+    
+    .header .btn{ 
+        border: 1px solid red;
+        border-radius: 2px;
+        background-color: #de6c17;
+        color: #ffffff;
+    } */
+}
