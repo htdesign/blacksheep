@@ -8,11 +8,37 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" type="text/css" href="styles.css">
    <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
+   <nav class="nav">
+      <a href="#" class="logo">
+         <img src="assets/paw.svg" alt="pawesome">
+         <h2>DOG<span>SITTING</span></h2>
+      </a>
+
+      <div class="navigation">
+         <ul class="nav-items">
+            <li><a href="#" class="active">Home</a></li>
+            <li class="our-services">
+               <a href="#">Our Services</a>
+               <div class="sub hide">
+                  <ul>
+                     <li><a href="#">Dog Walking</a></li>
+                     <li><a href="#">Dog Boarding</a></li>
+                     <li><a href="#">Dog Sitting</a></li>
+                  </ul>
+               </div>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+         <a href="#" class="hamburger"></a>
+      </div>   
+
+   </nav>
    <div class="container">
       <div class="header">
          <div class="header-copy">
@@ -21,7 +47,7 @@
             <a href="#" class="btn">Learn More</a>
          </div>
       </div>
-      <div class="services">
+      <div class="services" id="services">
          <h2>Our Services</h2>
          <h3>Local & trusted pet sitters will treat your fur baby like family. You’ll have piece of mind with regular
             communication and premium insurance.</h3>
@@ -56,6 +82,8 @@
          </div>
       </div>
    </div>
+
+   <script src="app.js"></script>
 </body>
 
 </html>
