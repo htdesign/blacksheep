@@ -76,6 +76,7 @@ h1, h2, h3, h4, h5 { font-weight: 700 }
     background-size: 200%;
     color: #ffffff;
     margin-bottom: 2em;
+    z-index: 0;
 }
 .header-copy {
     padding: 3em 1.2em 4em 1.2em;
@@ -114,6 +115,7 @@ h1, h2, h3, h4, h5 { font-weight: 700 }
     bottom: -2px;
     background: url('./assets/banner-wave.svg') bottom center no-repeat;
     background-size: auto;
+    z-index: -1;
 }
 
 .services {
